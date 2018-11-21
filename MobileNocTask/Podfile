@@ -6,7 +6,7 @@ target 'MobileNocTask' do
   use_frameworks!
 
   # Pods for MobileNocTask
-  pod 'Alamofire', '~> 4.7'
+  pod 'Alamofire', '~> 4.7.3'
   pod 'PromisesSwift', '~> 1.2.3'
 
   target 'MobileNocTaskTests' do
