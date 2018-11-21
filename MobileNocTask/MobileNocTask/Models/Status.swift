@@ -9,10 +9,7 @@
 import Foundation
 
 struct Status: Codable {
-    let id: Int! = [1, 2, 3, 4].randomElement()
-    let statusValue: String = ""
-    let legacyValue: String = ""
-    
-    init() {
-    }
+    let id: Int!
+    let statusValue: String
+    let legacyValue: String
 }

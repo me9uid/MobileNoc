@@ -17,5 +17,4 @@ extension UIColor {
     static var selectBlue = UIColor(red: 73.0/255.0, green: 161.0/255.0, blue: 249.0/255.0, alpha: 1)
     
     static var cellSelectedBlue = UIColor(red: 231.0/255.0, green: 246.0/255.0, blue: 255.0/255.0, alpha: 1)
-
 }

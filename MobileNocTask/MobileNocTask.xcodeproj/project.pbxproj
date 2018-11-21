@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1ECFC55D661AFF434033A424 /* Pods_MobileNocTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B0A5EF9D17BEFD173A775C /* Pods_MobileNocTaskUITests.framework */; };
+		1F1572830B18B34DDEBCE3B6 /* Pods_MobileNocTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9EE309F908A04CD5F9FFF3 /* Pods_MobileNocTaskTests.framework */; };
+		8975BCEEFB1C84683670B5E4 /* Pods_MobileNocTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0228AAE9AFA8B9D582E3DB6 /* Pods_MobileNocTask.framework */; };
 		D2667A4221A49D7B006B9602 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A4121A49D7B006B9602 /* AppDelegate.swift */; };
 		D2667A4421A49D7B006B9602 /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A4321A49D7B006B9602 /* AlertsView.swift */; };
 		D2667A4721A49D7B006B9602 /* Alerts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2667A4521A49D7B006B9602 /* Alerts.storyboard */; };
@@ -45,6 +48,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E26F91DABB8B780D75B6C22 /* Pods-MobileNocTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNocTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNocTask/Pods-MobileNocTask.release.xcconfig"; sourceTree = "<group>"; };
+		2429FE6BC98DFF9E2E7ACAAA /* Pods-MobileNocTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNocTaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNocTaskUITests/Pods-MobileNocTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		59B0A5EF9D17BEFD173A775C /* Pods_MobileNocTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileNocTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E9EE309F908A04CD5F9FFF3 /* Pods_MobileNocTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileNocTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A054D192FBF75123236F0009 /* Pods-MobileNocTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNocTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNocTaskTests/Pods-MobileNocTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		B261A69DE0C38F4DA414BC5A /* Pods-MobileNocTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNocTaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNocTaskUITests/Pods-MobileNocTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C220FBFBA8F3482994916DE1 /* Pods-MobileNocTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNocTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNocTask/Pods-MobileNocTask.debug.xcconfig"; sourceTree = "<group>"; };
 		D2667A3E21A49D7B006B9602 /* MobileNocTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileNocTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2667A4121A49D7B006B9602 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2667A4321A49D7B006B9602 /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
@@ -69,6 +79,8 @@
 		D2667A8621A5545A006B9602 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		D2667A8921A554BD006B9602 /* AlertsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsResponse.swift; sourceTree = "<group>"; };
 		D2667A8B21A56217006B9602 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		DD293DAC4BFB0BC4141A9349 /* Pods-MobileNocTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNocTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNocTaskTests/Pods-MobileNocTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0228AAE9AFA8B9D582E3DB6 /* Pods_MobileNocTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileNocTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8975BCEEFB1C84683670B5E4 /* Pods_MobileNocTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1572830B18B34DDEBCE3B6 /* Pods_MobileNocTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +104,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ECFC55D661AFF434033A424 /* Pods_MobileNocTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8486EE0ECE4AB1B3C826EC2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C220FBFBA8F3482994916DE1 /* Pods-MobileNocTask.debug.xcconfig */,
+				1E26F91DABB8B780D75B6C22 /* Pods-MobileNocTask.release.xcconfig */,
+				DD293DAC4BFB0BC4141A9349 /* Pods-MobileNocTaskTests.debug.xcconfig */,
+				A054D192FBF75123236F0009 /* Pods-MobileNocTaskTests.release.xcconfig */,
+				B261A69DE0C38F4DA414BC5A /* Pods-MobileNocTaskUITests.debug.xcconfig */,
+				2429FE6BC98DFF9E2E7ACAAA /* Pods-MobileNocTaskUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD36501EB2F676B3C33DD678 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0228AAE9AFA8B9D582E3DB6 /* Pods_MobileNocTask.framework */,
+				9E9EE309F908A04CD5F9FFF3 /* Pods_MobileNocTaskTests.framework */,
+				59B0A5EF9D17BEFD173A775C /* Pods_MobileNocTaskUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D2667A3521A49D7B006B9602 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +141,8 @@
 				D2667A5521A49D7C006B9602 /* MobileNocTaskTests */,
 				D2667A6021A49D7C006B9602 /* MobileNocTaskUITests */,
 				D2667A3F21A49D7B006B9602 /* Products */,
+				8486EE0ECE4AB1B3C826EC2B /* Pods */,
+				CD36501EB2F676B3C33DD678 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,11 +159,11 @@
 		D2667A4021A49D7B006B9602 /* MobileNocTask */ = {
 			isa = PBXGroup;
 			children = (
+				D2667A4121A49D7B006B9602 /* AppDelegate.swift */,
 				D2667A6F21A4A072006B9602 /* Helpers */,
 				D2667A8821A5548A006B9602 /* NetworkService */,
 				D2667A8521A55258006B9602 /* Models */,
 				D2667A8221A55048006B9602 /* Modules */,
-				D2667A4121A49D7B006B9602 /* AppDelegate.swift */,
 				D2667A4821A49D7C006B9602 /* Assets.xcassets */,
 				D2667A4A21A49D7C006B9602 /* LaunchScreen.storyboard */,
 				D2667A4D21A49D7C006B9602 /* Info.plist */,
@@ -200,8 +240,8 @@
 		D2667A8821A5548A006B9602 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
-				D2667A8921A554BD006B9602 /* AlertsResponse.swift */,
 				D2667A8B21A56217006B9602 /* NetworkService.swift */,
+				D2667A8921A554BD006B9602 /* AlertsResponse.swift */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -213,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2667A6621A49D7C006B9602 /* Build configuration list for PBXNativeTarget "MobileNocTask" */;
 			buildPhases = (
+				23FBA002A7AC25F3510D323A /* [CP] Check Pods Manifest.lock */,
 				D2667A3A21A49D7B006B9602 /* Sources */,
 				D2667A3B21A49D7B006B9602 /* Frameworks */,
 				D2667A3C21A49D7B006B9602 /* Resources */,
+				A8DA45453F363C450235B733 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,6 +272,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2667A6921A49D7C006B9602 /* Build configuration list for PBXNativeTarget "MobileNocTaskTests" */;
 			buildPhases = (
+				1AB255267B01053321937122 /* [CP] Check Pods Manifest.lock */,
 				D2667A4E21A49D7C006B9602 /* Sources */,
 				D2667A4F21A49D7C006B9602 /* Frameworks */,
 				D2667A5021A49D7C006B9602 /* Resources */,
@@ -248,6 +291,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2667A6C21A49D7C006B9602 /* Build configuration list for PBXNativeTarget "MobileNocTaskUITests" */;
 			buildPhases = (
+				79906A99CC0E51604CB112D3 /* [CP] Check Pods Manifest.lock */,
 				D2667A5921A49D7C006B9602 /* Sources */,
 				D2667A5A21A49D7C006B9602 /* Frameworks */,
 				D2667A5B21A49D7C006B9602 /* Resources */,
@@ -332,6 +376,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AB255267B01053321937122 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileNocTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23FBA002A7AC25F3510D323A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileNocTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79906A99CC0E51604CB112D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileNocTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8DA45453F363C450235B733 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MobileNocTask/Pods-MobileNocTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileNocTask/Pods-MobileNocTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2667A3A21A49D7B006B9602 /* Sources */ = {
@@ -522,11 +657,12 @@
 		};
 		D2667A6721A49D7C006B9602 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C220FBFBA8F3482994916DE1 /* Pods-MobileNocTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MobileNocTask/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -540,11 +676,12 @@
 		};
 		D2667A6821A49D7C006B9602 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E26F91DABB8B780D75B6C22 /* Pods-MobileNocTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MobileNocTask/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +695,7 @@
 		};
 		D2667A6A21A49D7C006B9602 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD293DAC4BFB0BC4141A9349 /* Pods-MobileNocTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -578,6 +716,7 @@
 		};
 		D2667A6B21A49D7C006B9602 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A054D192FBF75123236F0009 /* Pods-MobileNocTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -598,6 +737,7 @@
 		};
 		D2667A6D21A49D7C006B9602 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B261A69DE0C38F4DA414BC5A /* Pods-MobileNocTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -617,6 +757,7 @@
 		};
 		D2667A6E21A49D7C006B9602 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2429FE6BC98DFF9E2E7ACAAA /* Pods-MobileNocTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

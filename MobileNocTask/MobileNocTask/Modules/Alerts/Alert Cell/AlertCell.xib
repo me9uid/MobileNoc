@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,7 +19,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="60"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fO-6V-axj" userLabel="Content View">
-                            <rect key="frame" x="7.5" y="5" width="1009" height="50"/>
+                            <rect key="frame" x="7.5" y="10" width="1009" height="50"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="vyZ-S0-A9t" userLabel="Profile" customClass="RoundImage" customModule="MobileNocTask" customModuleProvider="target">
                                     <rect key="frame" x="20" y="6.5" width="37.5" height="37.5"/>
@@ -157,8 +156,8 @@
                     </subviews>
                     <color key="backgroundColor" red="0.96079725029999996" green="0.96076112989999995" blue="0.960785687" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
-                        <constraint firstItem="5fO-6V-axj" firstAttribute="top" secondItem="JZy-fB-Vkz" secondAttribute="top" constant="5" id="7fR-qW-fkv"/>
-                        <constraint firstAttribute="bottom" secondItem="5fO-6V-axj" secondAttribute="bottom" constant="5" id="TKP-bI-VQZ"/>
+                        <constraint firstItem="5fO-6V-axj" firstAttribute="top" secondItem="JZy-fB-Vkz" secondAttribute="top" constant="10" id="7fR-qW-fkv"/>
+                        <constraint firstAttribute="bottom" secondItem="5fO-6V-axj" secondAttribute="bottom" id="TKP-bI-VQZ"/>
                         <constraint firstAttribute="trailing" secondItem="5fO-6V-axj" secondAttribute="trailing" constant="7.5" id="TgR-QH-5BZ"/>
                         <constraint firstItem="5fO-6V-axj" firstAttribute="leading" secondItem="JZy-fB-Vkz" secondAttribute="leading" constant="7.5" id="k8f-IZ-Dwt"/>
                     </constraints>

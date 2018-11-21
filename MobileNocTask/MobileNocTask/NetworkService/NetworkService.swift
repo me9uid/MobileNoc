@@ -7,28 +7,62 @@
 //
 
 import Foundation
+import Alamofire
+import Promises
 
-class NetworkService: NSURLConnectionDelegate {
-    
-    func getAlertsList(page: Int, size: Int)  {
-        let username = "user"
-        let password = "pass"
-        let loginString = String(format: "%@:%@", username, password)
-        let loginData = loginString.data(using: String.Encoding.utf8)!
-        let base64LoginString = loginData.base64EncodedString()
-        
-        let url = URL(string: String(format: "https://45.55.43.15:9090/api/machine?page=%@&size=%@", page, size))!
-        var request = URLRequest(url: url)
-        request.httpMethod = "Get"
-        request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
-        
-        // fire off the request
-        // make sure your class conforms to NSURLConnectionDelegate
-        let urlConnection = NSURLConnection(request: request, delegate: self)
+protocol NetworkProtocol {
+    func getAlertsList(page: Int, size: Int) -> Promise<AlertResponse>
+}
 
+class NetworkService: NetworkProtocol {
+    
+    private let username = "admin@boot.com"
+    private let password = "admin"
+
+    let manager: SessionManager = {
+        return Alamofire.SessionManager(serverTrustPolicyManager: CustomServerTrustPoliceManager())
+    }()
+    
+    func getAlertsList(page: Int, size: Int) -> Promise<AlertResponse> {
+        let url = "https://45.55.43.15:9090/api/machine?" + "page=\(page)" + "&size=\(size)"
+        let credentials = (username + ":" + password).data(using: String.Encoding.utf8)!.base64EncodedString()
+        let headers = ["Authorization": "Basic \(credentials)"]
+
+        return Promise<AlertResponse>(on: .main) { fulfill, reject in
+            self.manager.request(URL(string: url)!,
+                              method: .get,
+                              parameters: nil,
+                              encoding: URLEncoding.default,
+                              headers: headers)
+                .responseAlertResponse { response in
+                    if let alertResponse = response.result.value {
+                        fulfill(alertResponse)
+                    } else {
+                        reject(response.error ?? NSError())
+                    }
+            }
+        }
+    }
+}
+
+extension DataRequest {
+    func decodableResponseSerializer<T: Decodable>() -> DataResponseSerializer<T> {
+        return DataResponseSerializer { _, response, data, error in
+            guard error == nil else { return .failure(error!) }
+            guard let data = data else {
+                return .failure(AFError.responseSerializationFailed(reason: .inputDataNil))
+            }
+            return Result { try JSONDecoder().decode(T.self, from: data) }
+        }
+    }
+}
+
+class CustomServerTrustPoliceManager : ServerTrustPolicyManager {
+    override func serverTrustPolicy(forHost host: String) -> ServerTrustPolicy? {
+        return .disableEvaluation
     }
     
-    func connection(_ connection: NSURLConnection, didFailWithError error: Error) {
-        <#code#>
+    public init() {
+        super.init(policies: [:])
     }
-    }
+}

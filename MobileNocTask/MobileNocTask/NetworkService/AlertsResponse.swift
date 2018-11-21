@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 struct AlertResponse: Codable {
     let content: [Alert]
@@ -14,4 +15,11 @@ struct AlertResponse: Codable {
     let last: Bool
     let totalPages, totalElements: Int
     let numberOfElements, size, number: Int
+}
+
+extension DataRequest {
+    @discardableResult
+    func responseAlertResponse(queue: DispatchQueue? = nil, completionHandler: @escaping (DataResponse<AlertResponse>) -> Void) -> Self {
+        return response(queue: queue, responseSerializer: decodableResponseSerializer(), completionHandler: completionHandler)
+    }
 }

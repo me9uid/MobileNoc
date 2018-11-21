@@ -9,6 +9,7 @@
 import Foundation
 
 struct Alert: Codable {
+
     let id: Int!
     let name: String?
     let ipAddress: String?
@@ -20,12 +21,4 @@ struct Alert: Codable {
     let call: Bool? = [true, false].randomElement()
     let clock: Bool? = [true, false].randomElement()
     let mute: Bool? = [true, false].randomElement()
-    
-    init(name: String, ip: String, subnet: String, status: Status) {
-        self.id = 0
-        self.name = name
-        self.ipAddress = ip
-        self.ipSubnetMask = subnet
-        self.status = status
-    }
 }

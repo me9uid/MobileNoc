@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -224,7 +223,7 @@
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41Z-xi-2g5">
-                                <rect key="frame" x="65" y="75" width="959" height="688"/>
+                                <rect key="frame" x="65" y="70" width="959" height="698"/>
                                 <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="5kw-Ej-uRL" kind="embed" identifier="list" id="X2g-h2-zOB"/>
@@ -237,12 +236,12 @@
                             <constraint firstItem="bfs-Im-kI7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="J2q-fP-0l4"/>
                             <constraint firstItem="41Z-xi-2g5" firstAttribute="leading" secondItem="bfs-Im-kI7" secondAttribute="trailing" id="XKE-b2-gGr"/>
                             <constraint firstItem="sgJ-bU-tGB" firstAttribute="leading" secondItem="bfs-Im-kI7" secondAttribute="trailing" id="ZRs-rX-Nmf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="41Z-xi-2g5" secondAttribute="bottom" constant="5" id="bZN-IY-23o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="41Z-xi-2g5" secondAttribute="bottom" id="bZN-IY-23o"/>
                             <constraint firstItem="sgJ-bU-tGB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fOs-vL-kjy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bfs-Im-kI7" secondAttribute="bottom" id="lCf-wg-Eqt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sgJ-bU-tGB" secondAttribute="trailing" id="n0B-jC-tCK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="41Z-xi-2g5" secondAttribute="trailing" id="uqP-ks-gS8"/>
-                            <constraint firstItem="41Z-xi-2g5" firstAttribute="top" secondItem="sgJ-bU-tGB" secondAttribute="bottom" constant="5" id="wOa-GF-Xw1"/>
+                            <constraint firstItem="41Z-xi-2g5" firstAttribute="top" secondItem="sgJ-bU-tGB" secondAttribute="bottom" id="wOa-GF-Xw1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -262,10 +261,15 @@
             <objects>
                 <tableViewController id="5kw-Ej-uRL" customClass="AlertsList" customModule="MobileNocTask" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tE9-YZ-A1l">
-                        <rect key="frame" x="0.0" y="0.0" width="959" height="688"/>
+                        <rect key="frame" x="0.0" y="0.0" width="959" height="698"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.96079725029999996" green="0.96076112989999995" blue="0.960785687" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="sectionIndexBackgroundColor" red="0.96079725029999996" green="0.96076112989999995" blue="0.960785687" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="aSe-e2-DL0">
+                            <rect key="frame" x="0.0" y="0.0" width="959" height="10"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </view>
                         <connections>
                             <outlet property="dataSource" destination="5kw-Ej-uRL" id="MW6-zf-pYD"/>
                             <outlet property="delegate" destination="5kw-Ej-uRL" id="XJN-fm-5un"/>

@@ -7,10 +7,9 @@
 //
 
 import UIKit
+import Promises
 
 class AlertsView: UIViewController {
-
-    private var list: AlertsListProtocol!
 
     @IBOutlet var filterButtons: [UIButton]!
     
@@ -25,16 +24,6 @@ class AlertsView: UIViewController {
                 button.backgroundColor = .selectBlue
                 button.setTitleColor(.white, for: .normal)
             }
-        }
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        list.update(alerts: [Alert(name: "A", ip: "B", subnet: "C", status: Status()), Alert(name: "A", ip: "B", subnet: "C", status: Status()), Alert(name: "A", ip: "B", subnet: "C", status: Status()), Alert(name: "A", ip: "B", subnet: "C", status: Status()), Alert(name: "A", ip: "X", subnet: "C", status: Status()), Alert(name: "A", ip: "B", subnet: "C", status: Status()), Alert(name: "A", ip: "B", subnet: "C", status: Status()), Alert(name: "A", ip: "B", subnet: "C", status: Status())])
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "list" {
-            self.list = segue.destination as? AlertsListProtocol
         }
     }
 }
