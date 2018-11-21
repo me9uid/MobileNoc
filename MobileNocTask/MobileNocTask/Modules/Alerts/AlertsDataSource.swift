@@ -16,18 +16,19 @@ protocol AlertsDataSource {
 class AlertsDataSourceImpl: AlertsDataSource {
     
     var data: Dynamic<[Alert]>
-    var network: NetworkProtocol = NetworkService()
+    var network: NetworkProtocol
     
-    private var currentPage = 0
-    private var stillLoading = false
+    var currentPage = 0
+    var shouldLoadMore = false
     
-    init() {
+    init(network: NetworkProtocol) {
         self.data = Dynamic([])
+        self.network = network
         fetchMoreData()
     }
     
     func update() {
-        if stillLoading {
+        if shouldLoadMore {
             fetchMoreData()
         }
     }
@@ -38,7 +39,7 @@ class AlertsDataSourceImpl: AlertsDataSource {
                 self.currentPage += 1
                 let newData = self.filter(response.content)
                 self.data.value.append(contentsOf: newData)
-                self.stillLoading = !response.last
+                self.shouldLoadMore = !response.last
             }
         }
     }

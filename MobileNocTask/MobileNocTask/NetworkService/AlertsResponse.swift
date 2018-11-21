@@ -11,10 +11,7 @@ import Alamofire
 
 struct AlertResponse: Codable {
     let content: [Alert]
-    let first: Bool
     let last: Bool
-    let totalPages, totalElements: Int
-    let numberOfElements, size, number: Int
 }
 
 extension DataRequest {

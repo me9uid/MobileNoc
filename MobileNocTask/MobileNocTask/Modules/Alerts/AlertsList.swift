@@ -10,7 +10,7 @@ import UIKit
 
 class AlertsList: UITableViewController {
     
-    let dataSource: AlertsDataSource = AlertsDataSourceImpl()
+    let dataSource: AlertsDataSource = AlertsDataSourceImpl(network: NetworkService())
     
     override func viewDidLoad() {
         super.viewDidLoad()
