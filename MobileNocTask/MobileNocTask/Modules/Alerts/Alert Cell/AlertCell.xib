@@ -28,14 +28,14 @@
                                         <constraint firstAttribute="width" secondItem="vyZ-S0-A9t" secondAttribute="height" id="IgF-vQ-DWy"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brasil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbe-pv-R6K">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brasil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jbe-pv-R6K">
                                     <rect key="frame" x="77.5" y="14.5" width="44.5" height="21.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRSANBCM01" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="3Gv-rc-zS1" userLabel="Serial">
-                                    <rect key="frame" x="187" y="18" width="80.5" height="14.5"/>
+                                    <rect key="frame" x="202" y="18" width="80.5" height="14.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <color key="textColor" red="0.5" green="0.80000000000000004" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
@@ -138,7 +138,7 @@
                                 <constraint firstAttribute="trailing" secondItem="Mig-B4-b24" secondAttribute="trailing" constant="15" id="DX5-t4-eoZ"/>
                                 <constraint firstItem="Mig-B4-b24" firstAttribute="leading" secondItem="ZIK-8n-IaS" secondAttribute="trailing" constant="15" id="EEq-OU-ak7"/>
                                 <constraint firstItem="Mig-B4-b24" firstAttribute="centerY" secondItem="5fO-6V-axj" secondAttribute="centerY" id="OFe-IK-yMZ"/>
-                                <constraint firstItem="3Gv-rc-zS1" firstAttribute="centerX" secondItem="5fO-6V-axj" secondAttribute="centerX" multiplier="0.45" id="WLc-Wn-07h"/>
+                                <constraint firstItem="3Gv-rc-zS1" firstAttribute="centerX" secondItem="5fO-6V-axj" secondAttribute="centerX" multiplier="0.48" id="WLc-Wn-07h"/>
                                 <constraint firstItem="tbY-JZ-Oc3" firstAttribute="centerY" secondItem="5fO-6V-axj" secondAttribute="centerY" id="WME-Su-CpL"/>
                                 <constraint firstItem="vyZ-S0-A9t" firstAttribute="height" secondItem="5fO-6V-axj" secondAttribute="height" multiplier="0.75" id="X48-x9-MqN"/>
                                 <constraint firstItem="Jbe-pv-R6K" firstAttribute="centerY" secondItem="5fO-6V-axj" secondAttribute="centerY" id="cuM-fN-u2M"/>
@@ -174,13 +174,13 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="alertIcon" destination="kyL-YN-rTR" id="n8R-Je-jdQ"/>
                 <outlet property="callIcon" destination="l5G-Cm-GFQ" id="ogH-4a-jLa"/>
                 <outlet property="checkIcon" destination="QYJ-lN-SAs" id="Oh7-dt-3Pk"/>
                 <outlet property="clockIcon" destination="hf4-BW-UNO" id="DqO-ea-4yn"/>
                 <outlet property="content" destination="5fO-6V-axj" id="w7U-zF-se8"/>
                 <outlet property="ipLabel" destination="NcS-yw-qtY" id="592-yq-LNf"/>
                 <outlet property="locationLabel" destination="Jbe-pv-R6K" id="NVE-GR-3Mu"/>
+                <outlet property="muteIcon" destination="kyL-YN-rTR" id="n8R-Je-jdQ"/>
                 <outlet property="profileImage" destination="vyZ-S0-A9t" id="UAw-Ip-hYj"/>
                 <outlet property="serverLabel" destination="3Gv-rc-zS1" id="hIU-q1-7h5"/>
                 <outlet property="statusImage" destination="Mig-B4-b24" id="aAb-78-HfY"/>

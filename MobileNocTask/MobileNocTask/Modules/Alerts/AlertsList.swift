@@ -18,14 +18,12 @@ class AlertsList: UITableViewController {
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 30
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AlertCell", for: indexPath) as! AlertCell
-
-        // Configure the cell...
-
+        cell.configure(alert: Alert(name: "dcjeomjinxuh", ip: "192.168.1.19", subnet: "255.255.255.0", status: Status()))
         return cell
     }
 }
