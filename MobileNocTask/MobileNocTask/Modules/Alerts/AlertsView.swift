@@ -10,7 +10,10 @@ import UIKit
 
 class AlertsView: UIViewController {
 
+    private var list: AlertsListProtocol!
+
     @IBOutlet var filterButtons: [UIButton]!
+    
     @IBAction func didUpdateFilter(_ sender: UIButton) {
         filterButtons.forEach { (button) in
             if button != sender {
@@ -24,5 +27,14 @@ class AlertsView: UIViewController {
             }
         }
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        list.update(alerts: [Alert(name: "A", ip: "B", subnet: "C", status: Status()), Alert(name: "A", ip: "B", subnet: "C", status: Status()), Alert(name: "A", ip: "B", subnet: "C", status: Status()), Alert(name: "A", ip: "B", subnet: "C", status: Status()), Alert(name: "A", ip: "X", subnet: "C", status: Status()), Alert(name: "A", ip: "B", subnet: "C", status: Status()), Alert(name: "A", ip: "B", subnet: "C", status: Status()), Alert(name: "A", ip: "B", subnet: "C", status: Status())])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "list" {
+            self.list = segue.destination as? AlertsListProtocol
+        }
+    }
 }

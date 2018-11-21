@@ -8,8 +8,14 @@
 
 import UIKit
 
+protocol AlertsListProtocol {
+    func update(alerts: [Alert])
+}
+
 class AlertsList: UITableViewController {
 
+    private var alerts: [Alert] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.register(UINib.init(nibName: "AlertCell", bundle: nil),
@@ -18,12 +24,19 @@ class AlertsList: UITableViewController {
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+        return alerts.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AlertCell", for: indexPath) as! AlertCell
-        cell.configure(alert: Alert(name: "dcjeomjinxuh", ip: "192.168.1.19", subnet: "255.255.255.0", status: Status()))
+        cell.configure(alert: alerts[indexPath.row])
         return cell
+    }
+}
+
+extension AlertsList: AlertsListProtocol {
+    func update(alerts: [Alert]) {
+        self.alerts = alerts
+        self.tableView.reloadData()
     }
 }
