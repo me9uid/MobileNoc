@@ -16,7 +16,7 @@ struct Alert: Codable {
     let ipSubnetMask: String?
     let status: Status?
     
-    let location: String? = ["Brasil", "Argentina", "Egypt", "Jordan"].randomElement()
+    let location: String? = ["Brasil", "Egypt", "Jordan"].randomElement()
     let check: Bool? = [true, false].randomElement()
     let call: Bool? = [true, false].randomElement()
     let clock: Bool? = [true, false].randomElement()

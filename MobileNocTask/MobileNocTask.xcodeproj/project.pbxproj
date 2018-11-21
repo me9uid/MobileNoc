@@ -28,6 +28,8 @@
 		D2667A8721A5545A006B9602 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A8621A5545A006B9602 /* Status.swift */; };
 		D2667A8A21A554BD006B9602 /* AlertsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A8921A554BD006B9602 /* AlertsResponse.swift */; };
 		D2667A8C21A56217006B9602 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A8B21A56217006B9602 /* NetworkService.swift */; };
+		D2667A8E21A5AAB8006B9602 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A8D21A5AAB8006B9602 /* Dynamic.swift */; };
+		D2667A9021A5ACE9006B9602 /* AlertsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A8F21A5ACE9006B9602 /* AlertsDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		D2667A8621A5545A006B9602 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		D2667A8921A554BD006B9602 /* AlertsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsResponse.swift; sourceTree = "<group>"; };
 		D2667A8B21A56217006B9602 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D2667A8D21A5AAB8006B9602 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		D2667A8F21A5ACE9006B9602 /* AlertsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsDataSource.swift; sourceTree = "<group>"; };
 		DD293DAC4BFB0BC4141A9349 /* Pods-MobileNocTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNocTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNocTaskTests/Pods-MobileNocTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E0228AAE9AFA8B9D582E3DB6 /* Pods_MobileNocTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileNocTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -196,6 +200,7 @@
 				D2667A7A21A5357B006B9602 /* UILabel+Helpers.swift */,
 				D2667A7221A4A18C006B9602 /* Round.swift */,
 				D2667A7E21A54C99006B9602 /* Colors.swift */,
+				D2667A8D21A5AAB8006B9602 /* Dynamic.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 				D2667A4521A49D7B006B9602 /* Alerts.storyboard */,
 				D2667A4321A49D7B006B9602 /* AlertsView.swift */,
 				D2667A7C21A53910006B9602 /* AlertsList.swift */,
+				D2667A8F21A5ACE9006B9602 /* AlertsDataSource.swift */,
 				D2667A8021A5501E006B9602 /* Alert Cell */,
 			);
 			path = Alerts;
@@ -473,8 +479,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2667A8E21A5AAB8006B9602 /* Dynamic.swift in Sources */,
 				D2667A8421A5523F006B9602 /* Alert.swift in Sources */,
 				D2667A8721A5545A006B9602 /* Status.swift in Sources */,
+				D2667A9021A5ACE9006B9602 /* AlertsDataSource.swift in Sources */,
 				D2667A8A21A554BD006B9602 /* AlertsResponse.swift in Sources */,
 				D2667A7B21A5357B006B9602 /* UILabel+Helpers.swift in Sources */,
 				D2667A7F21A54C99006B9602 /* Colors.swift in Sources */,

@@ -34,7 +34,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRSANBCM01" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="3Gv-rc-zS1" userLabel="Serial">
-                                    <rect key="frame" x="202" y="18" width="80.5" height="14.5"/>
+                                    <rect key="frame" x="212" y="18" width="80.5" height="14.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <color key="textColor" red="0.5" green="0.80000000000000004" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
@@ -91,7 +91,7 @@
                                     </constraints>
                                 </stackView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Module 2 Failure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3m-Lx-FCH" customClass="RoundInsetLabel" customModule="MobileNocTask" customModuleProvider="target">
-                                    <rect key="frame" x="814" y="11.5" width="126.5" height="27"/>
+                                    <rect key="frame" x="834" y="16.5" width="106.5" height="17"/>
                                     <color key="backgroundColor" red="0.93528205156326294" green="0.53376775979995728" blue="0.52547931671142578" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -137,7 +137,7 @@
                                 <constraint firstAttribute="trailing" secondItem="Mig-B4-b24" secondAttribute="trailing" constant="15" id="DX5-t4-eoZ"/>
                                 <constraint firstItem="Mig-B4-b24" firstAttribute="leading" secondItem="ZIK-8n-IaS" secondAttribute="trailing" constant="15" id="EEq-OU-ak7"/>
                                 <constraint firstItem="Mig-B4-b24" firstAttribute="centerY" secondItem="5fO-6V-axj" secondAttribute="centerY" id="OFe-IK-yMZ"/>
-                                <constraint firstItem="3Gv-rc-zS1" firstAttribute="centerX" secondItem="5fO-6V-axj" secondAttribute="centerX" multiplier="0.48" id="WLc-Wn-07h"/>
+                                <constraint firstItem="3Gv-rc-zS1" firstAttribute="centerX" secondItem="5fO-6V-axj" secondAttribute="centerX" multiplier="0.5" id="WLc-Wn-07h"/>
                                 <constraint firstItem="tbY-JZ-Oc3" firstAttribute="centerY" secondItem="5fO-6V-axj" secondAttribute="centerY" id="WME-Su-CpL"/>
                                 <constraint firstItem="vyZ-S0-A9t" firstAttribute="height" secondItem="5fO-6V-axj" secondAttribute="height" multiplier="0.75" id="X48-x9-MqN"/>
                                 <constraint firstItem="Jbe-pv-R6K" firstAttribute="centerY" secondItem="5fO-6V-axj" secondAttribute="centerY" id="cuM-fN-u2M"/>

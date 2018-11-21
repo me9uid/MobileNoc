@@ -72,6 +72,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRg-Ph-9co" userLabel="World">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <color key="backgroundColor" red="0.91765940189999995" green="0.91762489079999998" blue="0.91764825579999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="uRg-Ph-9co" secondAttribute="height" id="JEL-Gq-tEn"/>
                                                 </constraints>
@@ -79,6 +80,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lU8-8s-jBh" userLabel="Options">
                                                 <rect key="frame" x="50" y="0.0" width="50" height="50"/>
+                                                <color key="backgroundColor" red="0.91765940189999995" green="0.91762489079999998" blue="0.91764825579999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="lU8-8s-jBh" secondAttribute="height" id="pyf-kd-rNc"/>
                                                 </constraints>
@@ -86,13 +88,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3u1-Zw-DrO" userLabel="Settings">
                                                 <rect key="frame" x="100" y="0.0" width="50" height="50"/>
+                                                <color key="backgroundColor" red="0.91765940189999995" green="0.91762489079999998" blue="0.91764825579999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="3u1-Zw-DrO" secondAttribute="height" id="NI0-OZ-b7u"/>
                                                 </constraints>
                                                 <state key="normal" image="settings"/>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.91765940189361572" green="0.91762489080429077" blue="0.91764825582504272" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGH-Zx-nPN" customClass="RoundButton" customModule="MobileNocTask" customModuleProvider="target">
                                         <rect key="frame" x="604.5" y="10" width="103" height="30"/>
@@ -278,7 +280,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3T-7L-sph" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="156" y="132"/>
+            <point key="canvasLocation" x="156" y="46"/>
         </scene>
     </scenes>
     <resources>
