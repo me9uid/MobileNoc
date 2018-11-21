@@ -43,7 +43,7 @@ class AlertCell: UITableViewCell {
         ipLabel.text = alert.ipAddress
         subnetLabel.text = alert.ipSubnetMask
         
-        checkIcon.image = alert.check! ?#imageLiteral(resourceName: "checkON") : #imageLiteral(resourceName: "checkOFF")
+        checkIcon.image = alert.check! ? #imageLiteral(resourceName: "checkON") : #imageLiteral(resourceName: "checkOFF")
         callIcon.image = alert.call! ? #imageLiteral(resourceName: "callON") : #imageLiteral(resourceName: "callOFF")
         clockIcon.image = alert.clock! ? #imageLiteral(resourceName: "clockON") : #imageLiteral(resourceName: "clockOFF")
         muteIcon.image = alert.mute! ? #imageLiteral(resourceName: "alertON") : #imageLiteral(resourceName: "alertOFF")
