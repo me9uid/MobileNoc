@@ -36,6 +36,6 @@ class AlertsListTests: XCTestCase {
     }
     
     func alertWithId(_ id: Int) -> Alert {
-        return Alert(id: id, name: "", ipAddress: "", ipSubnetMask: "", status: Status(id: 0, statusValue: "", legacyValue: ""))
+        return Alert(id: id, name: "", ipAddress: "", ipSubnetMask: "", status: Status(id: 0, statusValue: ""))
     }
 }

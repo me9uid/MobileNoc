@@ -11,5 +11,4 @@ import Foundation
 struct Status: Codable {
     let id: Int!
     let statusValue: String
-    let legacyValue: String
 }

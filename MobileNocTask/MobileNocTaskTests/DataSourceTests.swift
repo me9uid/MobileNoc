@@ -53,7 +53,7 @@ class DataSourceTests: XCTestCase {
     }
     
     func testToFetchMoreDataWhileNetworkSuccessedShouldUpdateData() {
-        let alert = Alert(id: 0, name: "", ipAddress: "", ipSubnetMask: "", status: Status(id: 0, statusValue: "", legacyValue: ""))
+        let alert = Alert(id: 0, name: "", ipAddress: "", ipSubnetMask: "", status: Status(id: 0, statusValue: ""))
         let network = NetworkMock(status: true, object: AlertResponse(content: [alert], last: false))
         dataSource = AlertsDataSourceImpl(network: network)
         dataSource.data = Dynamic([])
@@ -66,7 +66,7 @@ class DataSourceTests: XCTestCase {
     }
     
     func testToFetchRedundantDataShouldNotUpdateData() {
-        let alert = Alert(id: 0, name: "", ipAddress: "", ipSubnetMask: "", status: Status(id: 0, statusValue: "", legacyValue: ""))
+        let alert = Alert(id: 0, name: "", ipAddress: "", ipSubnetMask: "", status: Status(id: 0, statusValue: ""))
         let network = NetworkMock(status: true, object: AlertResponse(content: [alert, alert], last: true))
         dataSource = AlertsDataSourceImpl(network: network)
         dataSource.data = Dynamic([alert])
