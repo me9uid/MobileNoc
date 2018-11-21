@@ -21,6 +21,9 @@
 		D2667A7B21A5357B006B9602 /* UILabel+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A7A21A5357B006B9602 /* UILabel+Helpers.swift */; };
 		D2667A7D21A53910006B9602 /* AlertsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A7C21A53910006B9602 /* AlertsList.swift */; };
 		D2667A7F21A54C99006B9602 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A7E21A54C99006B9602 /* Colors.swift */; };
+		D2667A8421A5523F006B9602 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A8321A5523F006B9602 /* Alert.swift */; };
+		D2667A8721A5545A006B9602 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A8621A5545A006B9602 /* Status.swift */; };
+		D2667A8A21A554BD006B9602 /* AlertsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A8921A554BD006B9602 /* AlertsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		D2667A7A21A5357B006B9602 /* UILabel+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Helpers.swift"; sourceTree = "<group>"; };
 		D2667A7C21A53910006B9602 /* AlertsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsList.swift; sourceTree = "<group>"; };
 		D2667A7E21A54C99006B9602 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D2667A8321A5523F006B9602 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		D2667A8621A5545A006B9602 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		D2667A8921A554BD006B9602 /* AlertsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				D2667A6F21A4A072006B9602 /* Helpers */,
+				D2667A8821A5548A006B9602 /* NetworkService */,
+				D2667A8521A55258006B9602 /* Models */,
 				D2667A8221A55048006B9602 /* Modules */,
 				D2667A4121A49D7B006B9602 /* AppDelegate.swift */,
 				D2667A4821A49D7C006B9602 /* Assets.xcassets */,
@@ -176,6 +184,23 @@
 				D2667A8121A5502D006B9602 /* Alerts */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		D2667A8521A55258006B9602 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2667A8321A5523F006B9602 /* Alert.swift */,
+				D2667A8621A5545A006B9602 /* Status.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D2667A8821A5548A006B9602 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				D2667A8921A554BD006B9602 /* AlertsResponse.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +335,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2667A8421A5523F006B9602 /* Alert.swift in Sources */,
+				D2667A8721A5545A006B9602 /* Status.swift in Sources */,
+				D2667A8A21A554BD006B9602 /* AlertsResponse.swift in Sources */,
 				D2667A7B21A5357B006B9602 /* UILabel+Helpers.swift in Sources */,
 				D2667A7F21A54C99006B9602 /* Colors.swift in Sources */,
 				D2667A7321A4A18C006B9602 /* Round.swift in Sources */,
