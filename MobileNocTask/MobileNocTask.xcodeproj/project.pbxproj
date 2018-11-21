@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2667A4221A49D7B006B9602 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A4121A49D7B006B9602 /* AppDelegate.swift */; };
+		D2667A4421A49D7B006B9602 /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A4321A49D7B006B9602 /* AlertsView.swift */; };
+		D2667A4721A49D7B006B9602 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2667A4521A49D7B006B9602 /* Main.storyboard */; };
+		D2667A4921A49D7C006B9602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2667A4821A49D7C006B9602 /* Assets.xcassets */; };
+		D2667A4C21A49D7C006B9602 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2667A4A21A49D7C006B9602 /* LaunchScreen.storyboard */; };
+		D2667A5721A49D7C006B9602 /* MobileNocTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A5621A49D7C006B9602 /* MobileNocTaskTests.swift */; };
+		D2667A6221A49D7C006B9602 /* MobileNocTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A6121A49D7C006B9602 /* MobileNocTaskUITests.swift */; };
+		D2667A7121A4A083006B9602 /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A7021A4A083006B9602 /* UIView+Helpers.swift */; };
+		D2667A7321A4A18C006B9602 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A7221A4A18C006B9602 /* RoundButton.swift */; };
+		D2667A7721A52F6B006B9602 /* AlertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2667A7621A52F6B006B9602 /* AlertCell.xib */; };
+		D2667A7921A52F8B006B9602 /* AlertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A7821A52F8B006B9602 /* AlertCell.swift */; };
+		D2667A7B21A5357B006B9602 /* UILabel+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A7A21A5357B006B9602 /* UILabel+Helpers.swift */; };
+		D2667A7D21A53910006B9602 /* AlertsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A7C21A53910006B9602 /* AlertsList.swift */; };
+		D2667A7F21A54C99006B9602 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A7E21A54C99006B9602 /* Colors.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2667A5321A49D7C006B9602 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2667A3621A49D7B006B9602 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2667A3D21A49D7B006B9602;
+			remoteInfo = MobileNocTask;
+		};
+		D2667A5E21A49D7C006B9602 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2667A3621A49D7B006B9602 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2667A3D21A49D7B006B9602;
+			remoteInfo = MobileNocTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D2667A3E21A49D7B006B9602 /* MobileNocTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileNocTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2667A4121A49D7B006B9602 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2667A4321A49D7B006B9602 /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
+		D2667A4621A49D7B006B9602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2667A4821A49D7C006B9602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2667A4B21A49D7C006B9602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2667A4D21A49D7C006B9602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2667A5221A49D7C006B9602 /* MobileNocTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileNocTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2667A5621A49D7C006B9602 /* MobileNocTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileNocTaskTests.swift; sourceTree = "<group>"; };
+		D2667A5821A49D7C006B9602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2667A5D21A49D7C006B9602 /* MobileNocTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileNocTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2667A6121A49D7C006B9602 /* MobileNocTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileNocTaskUITests.swift; sourceTree = "<group>"; };
+		D2667A6321A49D7C006B9602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2667A7021A4A083006B9602 /* UIView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helpers.swift"; sourceTree = "<group>"; };
+		D2667A7221A4A18C006B9602 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		D2667A7621A52F6B006B9602 /* AlertCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertCell.xib; sourceTree = "<group>"; };
+		D2667A7821A52F8B006B9602 /* AlertCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCell.swift; sourceTree = "<group>"; };
+		D2667A7A21A5357B006B9602 /* UILabel+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Helpers.swift"; sourceTree = "<group>"; };
+		D2667A7C21A53910006B9602 /* AlertsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsList.swift; sourceTree = "<group>"; };
+		D2667A7E21A54C99006B9602 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2667A3B21A49D7B006B9602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2667A4F21A49D7C006B9602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2667A5A21A49D7C006B9602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2667A3521A49D7B006B9602 = {
+			isa = PBXGroup;
+			children = (
+				D2667A4021A49D7B006B9602 /* MobileNocTask */,
+				D2667A5521A49D7C006B9602 /* MobileNocTaskTests */,
+				D2667A6021A49D7C006B9602 /* MobileNocTaskUITests */,
+				D2667A3F21A49D7B006B9602 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2667A3F21A49D7B006B9602 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2667A3E21A49D7B006B9602 /* MobileNocTask.app */,
+				D2667A5221A49D7C006B9602 /* MobileNocTaskTests.xctest */,
+				D2667A5D21A49D7C006B9602 /* MobileNocTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2667A4021A49D7B006B9602 /* MobileNocTask */ = {
+			isa = PBXGroup;
+			children = (
+				D2667A6F21A4A072006B9602 /* Helpers */,
+				D2667A4121A49D7B006B9602 /* AppDelegate.swift */,
+				D2667A4321A49D7B006B9602 /* AlertsView.swift */,
+				D2667A7C21A53910006B9602 /* AlertsList.swift */,
+				D2667A4521A49D7B006B9602 /* Main.storyboard */,
+				D2667A7621A52F6B006B9602 /* AlertCell.xib */,
+				D2667A7821A52F8B006B9602 /* AlertCell.swift */,
+				D2667A4821A49D7C006B9602 /* Assets.xcassets */,
+				D2667A4A21A49D7C006B9602 /* LaunchScreen.storyboard */,
+				D2667A4D21A49D7C006B9602 /* Info.plist */,
+			);
+			path = MobileNocTask;
+			sourceTree = "<group>";
+		};
+		D2667A5521A49D7C006B9602 /* MobileNocTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2667A5621A49D7C006B9602 /* MobileNocTaskTests.swift */,
+				D2667A5821A49D7C006B9602 /* Info.plist */,
+			);
+			path = MobileNocTaskTests;
+			sourceTree = "<group>";
+		};
+		D2667A6021A49D7C006B9602 /* MobileNocTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D2667A6121A49D7C006B9602 /* MobileNocTaskUITests.swift */,
+				D2667A6321A49D7C006B9602 /* Info.plist */,
+			);
+			path = MobileNocTaskUITests;
+			sourceTree = "<group>";
+		};
+		D2667A6F21A4A072006B9602 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D2667A7021A4A083006B9602 /* UIView+Helpers.swift */,
+				D2667A7A21A5357B006B9602 /* UILabel+Helpers.swift */,
+				D2667A7221A4A18C006B9602 /* RoundButton.swift */,
+				D2667A7E21A54C99006B9602 /* Colors.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2667A3D21A49D7B006B9602 /* MobileNocTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2667A6621A49D7C006B9602 /* Build configuration list for PBXNativeTarget "MobileNocTask" */;
+			buildPhases = (
+				D2667A3A21A49D7B006B9602 /* Sources */,
+				D2667A3B21A49D7B006B9602 /* Frameworks */,
+				D2667A3C21A49D7B006B9602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileNocTask;
+			productName = MobileNocTask;
+			productReference = D2667A3E21A49D7B006B9602 /* MobileNocTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2667A5121A49D7C006B9602 /* MobileNocTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2667A6921A49D7C006B9602 /* Build configuration list for PBXNativeTarget "MobileNocTaskTests" */;
+			buildPhases = (
+				D2667A4E21A49D7C006B9602 /* Sources */,
+				D2667A4F21A49D7C006B9602 /* Frameworks */,
+				D2667A5021A49D7C006B9602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2667A5421A49D7C006B9602 /* PBXTargetDependency */,
+			);
+			name = MobileNocTaskTests;
+			productName = MobileNocTaskTests;
+			productReference = D2667A5221A49D7C006B9602 /* MobileNocTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2667A5C21A49D7C006B9602 /* MobileNocTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2667A6C21A49D7C006B9602 /* Build configuration list for PBXNativeTarget "MobileNocTaskUITests" */;
+			buildPhases = (
+				D2667A5921A49D7C006B9602 /* Sources */,
+				D2667A5A21A49D7C006B9602 /* Frameworks */,
+				D2667A5B21A49D7C006B9602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2667A5F21A49D7C006B9602 /* PBXTargetDependency */,
+			);
+			name = MobileNocTaskUITests;
+			productName = MobileNocTaskUITests;
+			productReference = D2667A5D21A49D7C006B9602 /* MobileNocTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2667A3621A49D7B006B9602 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Ahmed Meguid";
+				TargetAttributes = {
+					D2667A3D21A49D7B006B9602 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					D2667A5121A49D7C006B9602 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = D2667A3D21A49D7B006B9602;
+					};
+					D2667A5C21A49D7C006B9602 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = D2667A3D21A49D7B006B9602;
+					};
+				};
+			};
+			buildConfigurationList = D2667A3921A49D7B006B9602 /* Build configuration list for PBXProject "MobileNocTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2667A3521A49D7B006B9602;
+			productRefGroup = D2667A3F21A49D7B006B9602 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2667A3D21A49D7B006B9602 /* MobileNocTask */,
+				D2667A5121A49D7C006B9602 /* MobileNocTaskTests */,
+				D2667A5C21A49D7C006B9602 /* MobileNocTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2667A3C21A49D7B006B9602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2667A4C21A49D7C006B9602 /* LaunchScreen.storyboard in Resources */,
+				D2667A4921A49D7C006B9602 /* Assets.xcassets in Resources */,
+				D2667A7721A52F6B006B9602 /* AlertCell.xib in Resources */,
+				D2667A4721A49D7B006B9602 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2667A5021A49D7C006B9602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2667A5B21A49D7C006B9602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2667A3A21A49D7B006B9602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2667A7B21A5357B006B9602 /* UILabel+Helpers.swift in Sources */,
+				D2667A7F21A54C99006B9602 /* Colors.swift in Sources */,
+				D2667A7321A4A18C006B9602 /* RoundButton.swift in Sources */,
+				D2667A4421A49D7B006B9602 /* AlertsView.swift in Sources */,
+				D2667A7121A4A083006B9602 /* UIView+Helpers.swift in Sources */,
+				D2667A7D21A53910006B9602 /* AlertsList.swift in Sources */,
+				D2667A7921A52F8B006B9602 /* AlertCell.swift in Sources */,
+				D2667A4221A49D7B006B9602 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2667A4E21A49D7C006B9602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2667A5721A49D7C006B9602 /* MobileNocTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2667A5921A49D7C006B9602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2667A6221A49D7C006B9602 /* MobileNocTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2667A5421A49D7C006B9602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2667A3D21A49D7B006B9602 /* MobileNocTask */;
+			targetProxy = D2667A5321A49D7C006B9602 /* PBXContainerItemProxy */;
+		};
+		D2667A5F21A49D7C006B9602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2667A3D21A49D7B006B9602 /* MobileNocTask */;
+			targetProxy = D2667A5E21A49D7C006B9602 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2667A4521A49D7B006B9602 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2667A4621A49D7B006B9602 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2667A4A21A49D7C006B9602 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2667A4B21A49D7C006B9602 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2667A6421A49D7C006B9602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2667A6521A49D7C006B9602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2667A6721A49D7C006B9602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MobileNocTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = meguid.MobileNocTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D2667A6821A49D7C006B9602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MobileNocTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = meguid.MobileNocTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		D2667A6A21A49D7C006B9602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MobileNocTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = meguid.MobileNocTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileNocTask.app/MobileNocTask";
+			};
+			name = Debug;
+		};
+		D2667A6B21A49D7C006B9602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MobileNocTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = meguid.MobileNocTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileNocTask.app/MobileNocTask";
+			};
+			name = Release;
+		};
+		D2667A6D21A49D7C006B9602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MobileNocTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = meguid.MobileNocTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobileNocTask;
+			};
+			name = Debug;
+		};
+		D2667A6E21A49D7C006B9602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MobileNocTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = meguid.MobileNocTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobileNocTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2667A3921A49D7B006B9602 /* Build configuration list for PBXProject "MobileNocTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2667A6421A49D7C006B9602 /* Debug */,
+				D2667A6521A49D7C006B9602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2667A6621A49D7C006B9602 /* Build configuration list for PBXNativeTarget "MobileNocTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2667A6721A49D7C006B9602 /* Debug */,
+				D2667A6821A49D7C006B9602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2667A6921A49D7C006B9602 /* Build configuration list for PBXNativeTarget "MobileNocTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2667A6A21A49D7C006B9602 /* Debug */,
+				D2667A6B21A49D7C006B9602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2667A6C21A49D7C006B9602 /* Build configuration list for PBXNativeTarget "MobileNocTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2667A6D21A49D7C006B9602 /* Debug */,
+				D2667A6E21A49D7C006B9602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2667A3621A49D7B006B9602 /* Project object */;
+}
