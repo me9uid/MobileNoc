@@ -10,7 +10,7 @@ import UIKit
 
 class AlertsList: UITableViewController {
     
-    let dataSource: AlertsDataSource = AlertsDataSourceImpl(network: NetworkService())
+    var dataSource: AlertsDataSource = AlertsDataSourceImpl(network: NetworkService())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class AlertsList: UITableViewController {
     }
 
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if tableView.contentOffset.y > (tableView.contentSize.height - tableView.frame.size.height) + 5 {
+        if tableView.contentOffset.y > (tableView.contentSize.height - tableView.frame.size.height) {
             dataSource.update()
         }
     }

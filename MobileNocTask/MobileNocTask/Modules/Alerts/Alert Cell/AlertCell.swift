@@ -38,28 +38,22 @@ class AlertCell: UITableViewCell {
     }
     
     func configure(alert: Alert) {
-        locationLabel.text = alert.location ?? ""
-        serverLabel.text = alert.name ?? ""
-        ipLabel.text = alert.ipAddress ?? ""
-        subnetLabel.text = alert.ipSubnetMask ?? ""
+        locationLabel.text = alert.location
+        serverLabel.text = alert.name
+        ipLabel.text = alert.ipAddress
+        subnetLabel.text = alert.ipSubnetMask
         
         checkIcon.image = alert.check! ? #imageLiteral(resourceName: "checkOFF") : #imageLiteral(resourceName: "checkON")
         callIcon.image = alert.call! ? #imageLiteral(resourceName: "callOFF") : #imageLiteral(resourceName: "callON")
         clockIcon.image = alert.clock! ? #imageLiteral(resourceName: "clockOFF") : #imageLiteral(resourceName: "clockON")
         muteIcon.image = alert.mute! ? #imageLiteral(resourceName: "alertOFF") : #imageLiteral(resourceName: "alertON")
 
-        if let statusValue = alert.status?.statusValue {
-            statusLabel.text = statusValue
-            statusImage.isHidden = false
-        } else {
-            statusImage.isHidden = true
-        }
+        let statusValue = alert.status?.statusValue
+        statusLabel.text = statusValue
+        statusLabel.isHidden = statusValue != nil ? false : true
         
-        if let status = statuses.filter({$0.0 == alert.status?.id}).first {
-            statusImage.image = status.1
-            statusImage.isHidden = false
-        } else {
-            statusImage.isHidden = true
-        }
+        let status = statuses.filter({$0.0 == alert.status?.id}).first
+        statusImage.isHidden = status != nil ? false : true
+        statusImage.image = status?.1
     }
 }

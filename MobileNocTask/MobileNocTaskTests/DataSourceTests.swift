@@ -12,31 +12,6 @@ import XCTest
 @testable import MobileNocTask
 @testable import Promises
 
-class NetworkMock: NetworkProtocol {
-    
-    var status: Bool = false
-    var object: AlertResponse?
-    
-    var called: Bool = false
-    
-    init() {
-    }
-    
-    init(status: Bool, object: AlertResponse?) {
-        self.status = status
-        self.object = object
-    }
-    
-    func getAlertsList(page: Int, size: Int) -> Promise<AlertResponse> {
-        called = true
-        return Promise<AlertResponse>(on: .main) { fulfill, reject in
-            if self.status {
-                fulfill(self.object!)
-            }
-        }
-    }
-}
-
 class DataSourceTests: XCTestCase {
     
     var dataSource: AlertsDataSourceImpl!
@@ -48,9 +23,9 @@ class DataSourceTests: XCTestCase {
     func testToUpdateWhileMoreDataShouldCallNetwork() {
         let network = NetworkMock()
         dataSource = AlertsDataSourceImpl(network: network)
-        network.called = false
         dataSource.shouldLoadMore = true
-        
+        network.called = false
+
         dataSource.update()
         
         XCTAssert(network.called)
@@ -59,9 +34,9 @@ class DataSourceTests: XCTestCase {
     func testToUpdateWhileMoreDataShouldNotCallNetwork() {
         let network = NetworkMock()
         dataSource = AlertsDataSourceImpl(network: network)
-        network.called = false
         dataSource.shouldLoadMore = false
-        
+        network.called = false
+
         dataSource.update()
         
         XCTAssertFalse(network.called)
@@ -78,7 +53,8 @@ class DataSourceTests: XCTestCase {
     }
     
     func testToFetchMoreDataWhileNetworkSuccessedShouldUpdateData() {
-        let network = NetworkMock(status: true, object: AlertResponse(content: [Alert(id: 0, name: "", ipAddress: "", ipSubnetMask: "", status: Status(id: 0, statusValue: "", legacyValue: ""))], last: false))
+        let alert = Alert(id: 0, name: "", ipAddress: "", ipSubnetMask: "", status: Status(id: 0, statusValue: "", legacyValue: ""))
+        let network = NetworkMock(status: true, object: AlertResponse(content: [alert], last: false))
         dataSource = AlertsDataSourceImpl(network: network)
         dataSource.data = Dynamic([])
         

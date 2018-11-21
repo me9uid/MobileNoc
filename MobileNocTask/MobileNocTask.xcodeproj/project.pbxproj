@@ -10,12 +10,15 @@
 		1ECFC55D661AFF434033A424 /* Pods_MobileNocTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B0A5EF9D17BEFD173A775C /* Pods_MobileNocTaskUITests.framework */; };
 		1F1572830B18B34DDEBCE3B6 /* Pods_MobileNocTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9EE309F908A04CD5F9FFF3 /* Pods_MobileNocTaskTests.framework */; };
 		8975BCEEFB1C84683670B5E4 /* Pods_MobileNocTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0228AAE9AFA8B9D582E3DB6 /* Pods_MobileNocTask.framework */; };
+		D218410621A5B84300A51C99 /* AlertsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D218410521A5B84300A51C99 /* AlertsViewTests.swift */; };
+		D218410921A5BC2E00A51C99 /* NetworkMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D218410821A5BC2E00A51C99 /* NetworkMock.swift */; };
+		D218410B21A5BC6200A51C99 /* DataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D218410A21A5BC6200A51C99 /* DataSourceMock.swift */; };
+		D218410D21A5BCE900A51C99 /* AlertsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D218410C21A5BCE900A51C99 /* AlertsListTests.swift */; };
 		D2667A4221A49D7B006B9602 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A4121A49D7B006B9602 /* AppDelegate.swift */; };
 		D2667A4421A49D7B006B9602 /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A4321A49D7B006B9602 /* AlertsView.swift */; };
 		D2667A4721A49D7B006B9602 /* Alerts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2667A4521A49D7B006B9602 /* Alerts.storyboard */; };
 		D2667A4921A49D7C006B9602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2667A4821A49D7C006B9602 /* Assets.xcassets */; };
 		D2667A4C21A49D7C006B9602 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2667A4A21A49D7C006B9602 /* LaunchScreen.storyboard */; };
-		D2667A5721A49D7C006B9602 /* MobileNocTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A5621A49D7C006B9602 /* MobileNocTaskTests.swift */; };
 		D2667A6221A49D7C006B9602 /* MobileNocTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A6121A49D7C006B9602 /* MobileNocTaskUITests.swift */; };
 		D2667A7121A4A083006B9602 /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A7021A4A083006B9602 /* UIView+Helpers.swift */; };
 		D2667A7321A4A18C006B9602 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2667A7221A4A18C006B9602 /* Round.swift */; };
@@ -58,6 +61,10 @@
 		A054D192FBF75123236F0009 /* Pods-MobileNocTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNocTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNocTaskTests/Pods-MobileNocTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		B261A69DE0C38F4DA414BC5A /* Pods-MobileNocTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNocTaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNocTaskUITests/Pods-MobileNocTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C220FBFBA8F3482994916DE1 /* Pods-MobileNocTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNocTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNocTask/Pods-MobileNocTask.debug.xcconfig"; sourceTree = "<group>"; };
+		D218410521A5B84300A51C99 /* AlertsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewTests.swift; sourceTree = "<group>"; };
+		D218410821A5BC2E00A51C99 /* NetworkMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMock.swift; sourceTree = "<group>"; };
+		D218410A21A5BC6200A51C99 /* DataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceMock.swift; sourceTree = "<group>"; };
+		D218410C21A5BCE900A51C99 /* AlertsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsListTests.swift; sourceTree = "<group>"; };
 		D2667A3E21A49D7B006B9602 /* MobileNocTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileNocTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2667A4121A49D7B006B9602 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2667A4321A49D7B006B9602 /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
@@ -66,7 +73,6 @@
 		D2667A4B21A49D7C006B9602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2667A4D21A49D7C006B9602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2667A5221A49D7C006B9602 /* MobileNocTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileNocTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2667A5621A49D7C006B9602 /* MobileNocTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileNocTaskTests.swift; sourceTree = "<group>"; };
 		D2667A5821A49D7C006B9602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2667A5D21A49D7C006B9602 /* MobileNocTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileNocTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2667A6121A49D7C006B9602 /* MobileNocTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileNocTaskUITests.swift; sourceTree = "<group>"; };
@@ -140,6 +146,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D218410721A5BC0C00A51C99 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				D218410821A5BC2E00A51C99 /* NetworkMock.swift */,
+				D218410A21A5BC6200A51C99 /* DataSourceMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		D2667A3521A49D7B006B9602 = {
 			isa = PBXGroup;
 			children = (
@@ -180,8 +195,10 @@
 		D2667A5521A49D7C006B9602 /* MobileNocTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				D2667A5621A49D7C006B9602 /* MobileNocTaskTests.swift */,
+				D218410721A5BC0C00A51C99 /* Mocks */,
 				D2667A9121A5AEE2006B9602 /* DataSourceTests.swift */,
+				D218410521A5B84300A51C99 /* AlertsViewTests.swift */,
+				D218410C21A5BCE900A51C99 /* AlertsListTests.swift */,
 				D2667A5821A49D7C006B9602 /* Info.plist */,
 			);
 			path = MobileNocTaskTests;
@@ -503,8 +520,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D218410D21A5BCE900A51C99 /* AlertsListTests.swift in Sources */,
+				D218410B21A5BC6200A51C99 /* DataSourceMock.swift in Sources */,
 				D2667A9221A5AEE2006B9602 /* DataSourceTests.swift in Sources */,
-				D2667A5721A49D7C006B9602 /* MobileNocTaskTests.swift in Sources */,
+				D218410621A5B84300A51C99 /* AlertsViewTests.swift in Sources */,
+				D218410921A5BC2E00A51C99 /* NetworkMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
